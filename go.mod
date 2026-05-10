@@ -1,4 +1,4 @@
-module github.com/samber/lo
+module github.com/myusername/lo
 
 go 1.18
 
