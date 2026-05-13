@@ -5,3 +5,6 @@ go 1.18
 require (
 	golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17
 )
+
+// Personal fork of samber/lo for learning generics in Go 1.18.
+// Original: https://github.com/samber/lo
