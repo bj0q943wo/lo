@@ -8,3 +8,7 @@ require (
 
 // Personal fork of samber/lo for learning generics in Go 1.18.
 // Original: https://github.com/samber/lo
+//
+// Notes:
+// - Experimenting with additional slice helpers (Compact, Flatten variants)
+// - Tracking upstream: last synced 2023-04-01
