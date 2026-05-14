@@ -96,6 +96,7 @@ func Chunk[T any](collection []T, size int) [][]T {
 }
 
 // Reverse reverses a slice in place and returns it.
+// Note: this modifies the original slice. If you need a copy, clone it first.
 func Reverse[T any](collection []T) []T {
 	length := len(collection)
 	half := length / 2
@@ -104,22 +105,4 @@ func Reverse[T any](collection []T) []T {
 		collection[i], collection[j] = collection[j], collection[i]
 	}
 	return collection
-}
-
-// First returns the first element of a collection and true, or zero value and false if empty.
-func First[T any](collection []T) (T, bool) {
-	if len(collection) == 0 {
-		var zero T
-		return zero, false
-	}
-	return collection[0], true
-}
-
-// Last returns the last element of a collection and true, or zero value and false if empty.
-func Last[T any](collection []T) (T, bool) {
-	if len(collection) == 0 {
-		var zero T
-		return zero, false
-	}
-	return collection[len(collection)-1], true
 }
