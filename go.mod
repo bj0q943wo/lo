@@ -13,3 +13,4 @@ require (
 // - Experimenting with additional slice helpers (Compact, Flatten variants)
 // - Tracking upstream: last synced 2023-04-01
 // - TODO: look into adding a ChunkBy helper (group consecutive equal elements)
+// - TODO: add IndexOfAll helper (return all indices of matching element)
